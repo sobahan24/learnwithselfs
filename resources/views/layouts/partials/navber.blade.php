@@ -52,6 +52,7 @@
                         <a class="dropdown-item" href="{{ url('php-pdo') }}">PHP PDO Tutorial</a>
                         <a class="dropdown-item" href="{{ url('php-solutions') }}">PHP Solutions</a>
                         <a class="dropdown-item" href="{{ url('php-programs') }}">PHP Programs</a>
+                        <a class="dropdown-item" href="{{ url('php-admin-panel') }}">PHP Admin Panel</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -62,6 +63,8 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{ url('laravel-5-8') }}">Laravel 5.8</a>
                         <a class="dropdown-item" href="{{ url('laravel-8') }}">Laravel 8</a>
+                        <a class="dropdown-item" href="{{ url('laravel-tips') }}">Laravel Tips</a>
+
                     </div>
                 </li>
                 <li class="nav-item">
