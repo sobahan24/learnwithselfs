@@ -1,0 +1,36 @@
+@extends("layouts.master")
+
+@section('title')
+PHP | Variables | Learn with Self
+@endsection
+
+@section('content')
+    <div class="container-fluid">
+        <div class="row">
+            @include('category.php.partials.phpSideber')
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-8 border-left border-right">
+                        <div class="main-heading">
+                            <h1>Variables in php</h1>
+                        </div>
+                        <div class="description py-3">
+                            <p>Creating/Declaring a variable is very simple in PHP.</p><p>A variable in php starts with the " <b>$</b> " sign, followed by the name of the variable.</p><p>In PHP, you don't have to mention the datatype of the variable when you declare it. You dont have to declare the variable first and then use it. The variable is created when you assign a value to it.</p><p><b>Example:</b></p><div class="fw" style="color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;"><div><span style="color: #569cd6;">&lt;?php</span></div><br><div><span style="color: #9cdcfe;">$message</span>&nbsp;=&nbsp;<span style="color: #ce9178;">"How&nbsp;are&nbsp;you?"</span>;</div><div><span style="color: #9cdcfe;">$a</span>&nbsp;=&nbsp;<span style="color: #b5cea8;">5</span>;</div><div><span style="color: #9cdcfe;">$b</span>&nbsp;=&nbsp;<span style="color: #b5cea8;">10</span>-<span style="color: #b5cea8;">8</span>;</div><br><div><span style="color: #569cd6;">?</span><span style="color: #569cd6;">&gt;</span></div></div><p><span style="font-size: 1rem;">In the above example, $message will have the value "How are you?" , $a will be assigned with the value "5" and $b will be having the value "2".&nbsp;</span><br></p><p><b>REMEMBER: </b>When<b>&nbsp;</b>assigning a string to any variable, put it inside the double quotes. </p><p>Any value/message typed in double quotes(" ") will be display the string as it as.</p><p><b>Example :</b></p><div class="fw" style="background-color: rgb(30, 30, 30); font-family: Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;"><div style="color: rgb(212, 212, 212);"><span style="color: #569cd6;">&lt;?php</span></div><font color="#d4d4d4"><div style="background-color: rgb(30, 30, 30); font-family: Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;"><font color="#d4d4d4"><br></font></div></font><span style="color: rgb(156, 220, 254);">$message</span><span style="color: rgb(212, 212, 212);">&nbsp;=&nbsp;</span><span style="color: rgb(206, 145, 120);">"How&nbsp;are&nbsp;you?"</span><span style="color: rgb(212, 212, 212);">;</span><font color="#d4d4d4"><br></font><div style="color: rgb(212, 212, 212);"><span style="color: rgb(156, 220, 254);">$a</span><font color="#d4d4d4">&nbsp;=&nbsp;</font><font color="#b5cea8">10-8</font><font color="#d4d4d4">;</font><br></div><div style="color: rgb(212, 212, 212);"><span style="color: #9cdcfe;">$b</span>&nbsp;=&nbsp;<span style="color: #ce9178;">"10-8"</span>;</div><font color="#d4d4d4"><br></font><div style="color: rgb(212, 212, 212);"><span style="color: #569cd6;">?</span><span style="color: #569cd6;">&gt;</span></div></div><p><span style="font-size: 1rem;">Here $message will have the value "How are you?", $a will have the value as "2" and $b will have the value "10-8". By this we understand anything written inside the double quotes is a string or a message.</span><br></p><p><span style="font-size: 1rem; color: rgb(34, 34, 34); font-family: arial, sans-serif;">Concatenation</span><span style="font-size: 1rem; color: rgb(34, 34, 34); font-family: arial, sans-serif;">&nbsp;</span>of variables</p><p>In PHP, We can concatenate two or more variables using the dot "."</p><p><b>Example :</b></p><div class="fw" style="color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;"><div><span style="color: #569cd6;">&lt;?php</span></div><div><span style="color: #9cdcfe;">$message</span>&nbsp;=&nbsp;<span style="color: #ce9178;">"How&nbsp;are&nbsp;you?"</span>;</div><div><span style="color: rgb(156, 220, 254);">$a</span>&nbsp;=&nbsp;<span style="color: rgb(181, 206, 168);">5</span>;</div><br><div><span style="color: #dcdcaa;">echo</span>&nbsp;<span style="color: #9cdcfe;">$a</span>.<span style="color: #ce9178;">" is&nbsp;the&nbsp;number&nbsp;and&nbsp;"</span>.<span style="color: #9cdcfe;">$message</span>.<span style="color: #ce9178;">" is&nbsp;the&nbsp;string"</span>;</div><div><span style="color: #569cd6;">?</span><span style="color: #569cd6;">&gt;</span></div></div><p>&nbsp;<span style="font-size: 1rem;">The output for the above code will look something like this:</span></p><p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">5 is the number and How are you? is the string</span></p><p>Naming Conventions</p><p><b>1.</b>A variable name can be any aplha-numeric&nbsp;<span style="font-size: 1rem;">combination but it should always start with a alphabet.</span></p><p><span style="font-size: 1rem;">For example</span></p><div class="fw" style="color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;"><div><span style="color: #569cd6;">&lt;?php</span></div><br><div><span style="color: #9cdcfe;">$a</span>,&nbsp;<span style="color: #9cdcfe;">$name</span>,&nbsp;<span style="color: #9cdcfe;">$house_no</span>,&nbsp;<span style="color: #9cdcfe;">$student5</span></div><br><div><span style="color: #569cd6;">?</span><span style="color: #569cd6;">&gt;</span></div></div><p><span style="font-size: 1rem;">&nbsp;</span><span style="font-size: 1rem;"><b>2.</b> We cannot use any special characters/symbol except underscore(_) while naming a variable.</span></p><p>&nbsp;<b>3.</b> Keywords cannot be used as variables.</p><p>Keywords are those reserved words which have predefined meaning.</p><p>For example: array, empty, final are few keywords in php.</p><p><br></p>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <div class="row">
+                                <div class="col-md-6 col-6 text-start">
+                                    <a href="{{ url('/php/php-comments') }}" class="bg-blue px-5 btn text-white" ><i class="fa fa-arrow-left me-2"></i> Prev </a>
+                                </div>
+                                <div class="col-md-6 col-6 text-end">
+                                    <a href="{{ url('/php/php-operators') }}" class="bg-blue px-5 btn text-white" >Next <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @include('category.php.partials.latestPost')
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
